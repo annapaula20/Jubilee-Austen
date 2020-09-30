@@ -1,308 +1,307 @@
 /***** BASE STYLES *****/
 html {
-    font-size: 18px;
-  }
-  body {
-    font-family: "Source Sans Pro", sans-serif;
-    color: #2b2b2b;
-  }
-  
-  .content-wrapper {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  #about,
-  #work,
+  font-size: 18px;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #2b2b2b;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#about,
+#work,
+#contact {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+/*****Header******/
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0 10px;
+  align-items: center;
+  flex-flow: row wrap;
+}
+header h1 {
+  font-family: "Lora", serif;
+  text-align: center;
+  font-size: 2em;
+  color: #bbc085;
+  margin: 10px;
+  width: 100%;
+}
+header nav {
+  width: 70%;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #828282;
+  padding: 10px;
+}
+
+.hero-section {
+  min-height: 500px;
+  background: url("../img/full-background.png") center;
+  background-size: cover;
+}
+.hero-section h2 {
+  font-family: "Lora", serif;
+  font-size: 2em;
+  line-height: 50px;
+  color: #9b9b9b;
+  padding: 35px 0;
+  margin: 0 auto;
+}
+span {
+  color: #2b2b2b;
+}
+
+/*****About*****/
+
+#about h2 {
+  font-family: "Lora", serif;
+  font-size: 1.35em;
+}
+#about p {
+  color: #7f7f7f;
+  line-height: 30px;
+}
+/*****Work******/
+
+#work {
+  background-color: #f9ceb7;
+  text-align: center;
+}
+.work-content {
+  padding: 20px;
+}
+
+#work h3 {
+  font-size: 1.35em;
+  line-height: 2em;
+}
+#work p {
+  font-family: "Lora", serif;
+  line-height: 30px;
+}
+/******Contact*********/
+
+#contact {
+  background-color: #ebebeb;
+}
+.contact-content {
+  text-align: center;
+}
+#contact img#contact-img {
+  border: 12px solid #ffffff;
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-image {
+  padding: 20px 20px 10px;
+  text-align: center;
+}
+
+#contact #envelope {
+  padding: 0 5px;
+  width: 10%;
+}
+
+#contact h2 {
+  font-family: "Lora", serif;
+  font-size: 1.35em;
+  line-height: 2.4em;
+}
+
+#contact #email-header {
+  font-size: 1.33em;
+  font-weight: 400;
+  line-height: 2.42em;
+  margin: 0;
+}
+
+#contact #socialmedia-header {
+  font-weight: bold;
+  font-size: 1.33em;
+  line-height: 44px;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #c49075;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#contact ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+#contact ul li {
+  display: inline;
+}
+#contact ul img {
+  padding: 0 10px;
+  font-size: 2em;
+}
+/********Tablet******/
+
+@media only screen and (min-width: 767px) {
   #contact {
     display: flex;
-    justify-content: center;
-    padding: 40px 0;
   }
-  
-  /*****Header******/
-  
-  header {
+
+  .footer-flex {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 40px 0 10px;
-    align-items: center;
-    flex-flow: row wrap;
   }
+
+  .contact-image {
+    width: 50%;
+  }
+
+  #contact img#contact-img {
+    display: flex;
+  }
+
+  .contact-content {
+    width: 50%;
+  }
+}
+/***** DESKTOP *****/
+
+@media only screen and (min-width: 1024px) {
+  header {
+    width: 100%;
+    padding-top: 75px;
+  }
+
   header h1 {
-    font-family: "Lora", serif;
-    text-align: center;
-    font-size: 2em;
-    color: #bbc085;
-    margin: 10px;
-    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex: 8;
   }
+
   header nav {
-    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
   }
+
   nav ul {
     display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
+    justify-content: flex-end;
+  }
+
+  nav ul li a {
+    padding-left: 80px;
+  }
+
+  .hero-section h2 {
+    font-size: 4.5em;
+    line-height: 80px;
+    margin: 99px 0;
+    padding: 70px 0 20px 5px;
+    width: 90%;
+  }
+
+  .hero-section {
+    min-height: 800px;
+  }
+
+  #about h2 {
+    font-size: 2.25em;
+    padding-left: 50px;
+  }
+
+  #about,
+  #work {
+    padding: 55px 40px;
+  }
+  .about-content {
+    display: flex;
     width: 100%;
   }
-  nav ul li a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #828282;
-    padding: 10px;
-  }
-  
-  .hero-section {
-    min-height: 500px;
-    background: url("../img/full-background.png") center;
-    background-size: cover;
-  }
-  .hero-section h2 {
-    font-family: "Lora", serif;
-    font-size: 2em;
-    line-height: 50px;
-    color: #9b9b9b;
-    padding: 35px 0;
-    margin: 0 auto;
-  }
-  span {
-    color: #2b2b2b;
-  }
-  
-  /*****About*****/
-  
-  #about h2 {
-    font-family: "Lora", serif;
-    font-size: 1.35em;
+
+  #about p:last-child {
+    margin-right: 0;
   }
   #about p {
-    color: #7f7f7f;
-    line-height: 30px;
+    font-size: 1.312em;
+    line-height: 40px;
+    padding: 0 50px;
   }
-  /*****Work******/
-  
+
   #work {
-    background-color: #f9ceb7;
-    text-align: center;
+    display: flex;
+    width: 100%;
+    padding: 115px 0;
   }
+
+  #work .content-wrapper {
+    display: flex;
+  }
+
   .work-content {
-    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 33.3%;
+    align-items: center;
+    display: block;
   }
-  
-  #work h3 {
-    font-size: 1.35em;
-    line-height: 2em;
-  }
+
   #work p {
-    font-family: "Lora", serif;
-    line-height: 30px;
+    padding: 0 50px;
   }
-  /******Contact*********/
-  
+
+  #work img {
+    padding-bottom: 30px;
+  }
+
+  #work h3 {
+    margin: 0 105px;
+  }
+
   #contact {
-    background-color: #ebebeb;
+    padding: 110px 0;
   }
-  .contact-content {
-    text-align: center;
-  }
-  #contact img#contact-img {
-    border: 12px solid #ffffff;
-    width: 80%;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .contact-image {
-    padding: 20px 20px 10px;
-    text-align: center;
-  }
-  
-  #contact #envelope {
-    padding: 0 5px;
-    width: 10%;
-  }
-  
+
   #contact h2 {
-    font-family: "Lora", serif;
-    font-size: 1.35em;
-    line-height: 2.4em;
+    font-size: 2.25em;
   }
-  
-  #contact #email-header {
-    font-size: 1.33em;
-    font-weight: 400;
-    line-height: 2.42em;
-    margin: 0;
-  }
-  
-  #contact #socialmedia-header {
-    font-weight: bold;
-    font-size: 1.33em;
-    line-height: 44px;
-  }
-  
-  #contact a {
-    text-decoration: none;
-    color: #c49075;
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-  #contact ul {
-    list-style: none;
-    margin-bottom: 0;
-    padding-bottom: 20px;
-  }
-  
-  #contact ul li {
-    display: inline;
-  }
-  #contact ul img {
-    padding: 0 10px;
+
+  #email-header {
     font-size: 2em;
   }
-  /********Tablet******/
-  
-  @media only screen and (min-width: 767px) {
-    #contact {
-      display: flex;
-    }
-  
-    .footer-flex {
-      display: flex;
-    }
-  
-    .contact-image {
-      width: 50%;
-    }
-  
-    #contact img#contact-img {
-      display: flex;
-    }
-  
-    .contact-content {
-      width: 50%;
-    }
+
+  #contact a {
+    font-size: 1.75em;
   }
-  /***** DESKTOP *****/
-  
-  @media only screen and (min-width: 1024px) {
-    header {
-      width: 100%;
-      padding-top: 75px;
-    }
-  
-    header h1 {
-      display: flex;
-      justify-content: flex-start;
-      flex: 8;
-    }
-  
-    header nav {
-      display: flex;
-      justify-content: flex-end;
-      flex: 1;
-    }
-  
-    nav ul {
-      display: flex;
-      justify-content: flex-end;
-    }
-  
-    nav ul li a {
-      padding-left: 80px;
-    }
-  
-    .hero-section h2 {
-      font-size: 4.5em;
-      line-height: 80px;
-      margin: 99px 0;
-      padding: 70px 0 20px 5px;
-      width: 90%;
-    }
-  
-    .hero-section {
-      min-height: 800px;
-    }
-  
-    #about h2 {
-      font-size: 2.25em;
-      padding-left: 50px;
-    }
-  
-    #about,
-    #work {
-      padding: 55px 40px;
-    }
-    .about-content {
-      display: flex;
-      width: 100%;
-    }
-  
-    #about p:last-child {
-      margin-right: 0;
-    }
-    #about p {
-      font-size: 1.312em;
-      line-height: 40px;
-      padding: 0 50px;
-    }
-  
-    #work {
-      display: flex;
-      width: 100%;
-      padding: 115px 0;
-    }
-  
-    #work .content-wrapper {
-      display: flex;
-    }
-  
-    .work-content {
-      display: flex;
-      flex-flow: row wrap;
-      width: 33.3%;
-      align-items: center;
-      display: block;
-    }
-  
-    #work p {
-      padding: 0 50px;
-    }
-  
-    #work img {
-      padding-bottom: 30px;
-    }
-  
-    #work h3 {
-      margin: 0 105px;
-    }
-  
-    #contact {
-      padding: 110px 0;
-    }
-  
-    #contact h2 {
-      font-size: 2.25em;
-    }
-  
-    #email-header {
-      font-size: 2em;
-    }
-  
-    #contact a {
-      font-size: 1.75em;
-    }
-  
-    #socialmedia-header {
-      font-size: 1.813em;
-    }
-  
-    #envelope {
-      height: auto;
-    }
+
+  #socialmedia-header {
+    font-size: 1.813em;
   }
-  
+
+  #envelope {
+    height: auto;
+  }
+}
